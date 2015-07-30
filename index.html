@@ -1,23 +1,45 @@
 ---
 layout: default
+body_class: "home-template user"
 ---
+{% include header.html %}
 
-<div class="home">
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home">
+      {% for post in site.posts %}
+      <article class="{%comment%}post_class{%endcomment%}">
 
-  <h1 class="page-heading">Posts</h1>
+          {% if post.image %}
+              <div class="image-holder show">
+                <a href="{{ post.url | prepend: site.baseurl }}" class="inner"
+                  style="background-image: url('/content/images/{{ post.image }}');">
+                  <img src="/content/images/{{ post.image }}">
+              </a>
+            </div>
+          {% endif %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="meta">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
+            </time>
+          </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <header>
+              <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+          </header>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+          <div class="text">
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="readmore">Continue Reading</a>
+          </div>
+      </article>
+      {% endfor %}
 
+      {% include pagination.html %}
+
+    </div>
+  </div>
 </div>
+
+{% include footer.html %}
