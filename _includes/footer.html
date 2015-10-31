@@ -7,7 +7,7 @@
             </a>
 
             {% if site.logo %}
-            <a href="{{ site.url }}" class="photo circle">
+            <a href="{{ site.baseurl }}" class="photo circle">
               <span style="background-image: url('{{ site.baseurl }}/assets/images/{{ site.logo }}');">
                 <img src="{{ site.baseurl }}/assets/images/{{ site.logo }}" alt="{{ site.title }}"/>
               </span>
@@ -16,7 +16,7 @@
 
             <div class="details">
                 <h4><a href="{{ site.url }}" class="url n">{{ site.title }}</a></h4>
-                <a href="{{ site.url }}" class="js-remove-domain-schema">{{ site.url }}</a><br>
+                <a href="{{ site.baseurl | prepend: site.url }}" class="js-remove-domain-schema">{{ site.url }}{{ site.baseurl }}</a><br>
                 <span>Published with <a href="https://jekyllrb.org">Jekyll</a></span>
             </div>
         </div>

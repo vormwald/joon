@@ -5,9 +5,9 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Roon was an excellent service, with a beautiful understated design. Roon
   was eventually acquired by Ghost, who awesomely chose to open source the theme.
-  <br/>This is my Jekyll port of said theme
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://vormwald.github.io/joon" # the base hostname & protocol for your site
+  <br/>This is my Jekyll port of the Roon theme
+url: "http://vormwald.github.io" # the base hostname & protocol for your site
+baseurl: "/joon" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  jekyll
 

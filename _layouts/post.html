@@ -4,8 +4,8 @@ body_class: post-template
 ---
 {% if page.image %}
 <div id="feature_image">
-  <div class="inner" style="background-image: url('/content/images//{{ page.image }}')">
-    <img src='/content/images/{{ page.image }}'>
+  <div class="inner" style="background-image: url('{{ site.baseurl }}/content/images//{{ page.image }}')">
+    <img src='{{ site.baseurl }}/content/images/{{ page.image }}'>
     </div>
 </div>
 {% endif %}
@@ -13,10 +13,10 @@ body_class: post-template
 <article role="main" class="{% if page.image %}image{% endif %}">
     <header>
       <a href="{{ site.baseurl }}/" id="home_link">«</a>
-        <div class="meta"><time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
-          <span class="count" id="js-reading-time">&nbsp;</span>
-        </div>
-        <h1>{{ page.title }}</h1>
+      <div class="meta"><time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
+        <span class="count" id="js-reading-time">&nbsp;</span>
+      </div>
+      <h1>{{ page.title }}</h1>
     </header>
 
     <div class="text" id="js-post-content">
@@ -24,13 +24,13 @@ body_class: post-template
     </div>
 
     <menu>
-        <a href="" id="btn_share" class="btn" title="Share">
-            <span aria-hidden="true" data-icon="S"></span>
-            <strong>Share</strong>
-        </a>
-        <a href="http://twitter.com/share?text={{ page.title | xml_encode }}&url={{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
-            <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
-        </a>
+      <a href="" id="btn_share" class="btn" title="Share">
+        <span aria-hidden="true" data-icon="S"></span>
+        <strong>Share</strong>
+      </a>
+      <a href="http://twitter.com/share?text={{ page.title | xml_encode }}&url={{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+        <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+      </a>
     </menu>
 
 
