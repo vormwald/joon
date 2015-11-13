@@ -40,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### Big Image
 
-![Test Image](/content/images/joon-big.jpg)
+![Test Image]({{ site.baseurl }}/content/images/joon-big.jpg)
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -48,7 +48,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
-![Small Test Image](/content/images/joon-small.jpg)
+![Small Test Image]({{ site.baseurl }}/content/images/joon-small.jpg)
 
 Labore et dolore.
 
