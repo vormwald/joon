@@ -71,6 +71,22 @@ body_class: post-template
     </div>
 </div>
 
+<div id="post_nav">
+    <nav role="navigation">
+        {% if page.next %}
+        <a href="{{ page.next.url }}" id="post_next" title="Next Post">
+            <span aria-hidden="true" data-icon=">"></span>
+            The Newer Post
+        </a>
+        {% endif %}
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" id="post_prev" title="Previous Post">
+            Something Older
+            <span aria-hidden="true" data-icon=">"></span>
+        </a>
+        {% endif %}
+    </nav>
+</div>
 
 <script>
 window.onload = function () {
