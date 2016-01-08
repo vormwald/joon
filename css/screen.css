@@ -1179,6 +1179,24 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     line-height: 1.6em;
     color: #a4adb6
 }
+
+body>footer #footer_info, .post-footer #footer_info {
+    margin-top: 40px;
+    text-align: center;
+    opacity: .5;
+}
+
+body>footer #footer_info span, .post-footer #footer_info span {
+    font-size: 10px;
+    line-height: 1.6em;
+    color: #a4adb6
+}
+body>footer #footer_info a, .post-footer #footer_info a {
+    font-size: 10px;
+    line-height: 1.6em;
+    color: #333333
+}
+
 #blog_badge {
     position: absolute;
     display: block;
