@@ -12,7 +12,7 @@ body_class: post-template
 
 <article role="main" class="{% if page.image %}image{% endif %}">
     <header>
-      <a href="{{ site.baseurl }}/" id="home_link">«</a>
+      <a href="{{ site.baseurl }}/" id="home_link"><i class="fa fa-chevron-left"></i></a>
       <div class="meta"><time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
         <span class="count" id="js-reading-time">&nbsp;</span>
       </div>
@@ -24,12 +24,14 @@ body_class: post-template
     </div>
 
     <menu>
-      <a href="" id="btn_share" class="btn" title="Share">
-        <span aria-hidden="true" data-icon="S"></span>
-        <strong>Share</strong>
+      <a href="{{ site.baseurl }}/" id="btn_back" title="Go Back">
+        <i class="fa fa-chevron-left"></i>
       </a>
-      <a href="http://twitter.com/share?text={{ page.title | xml_encode }}&url={{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
-        <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+      <a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url |prepend: site.url }}" target="_blank" id="btn_share" title="Share via Facebook">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="http://twitter.com/share?url={{ page.url |prepend: site.url }}&text={{ page.title | xml_encode }} - {{ site.title | xml_encode }}&via=aoozdemir" target="_blank" id="btn_share" title="Share via Twitter">
+        <i class="fa fa-twitter"></i>
       </a>
     </menu>
 
@@ -37,40 +39,6 @@ body_class: post-template
     {% include footer.html %}
 
 </article>
-
-<div id="share_modal">
-    <div class="wrap">
-        <div class="inner">
-            <header>
-                Share
-                <a href="" class="close" title="Close">&times;</a>
-            </header>
-
-            <div class="roon-share-links">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-                <div id="fb-elems">
-                    <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
-                    fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
-                </div>
-
-                <div id="pinit-btn">
-                    <a href="//pinterest.com/pin/create/button/?url={{ page.url |prepend: site.baseurl }}&amp;description={{ page.title | xml_encode }}-{{ site.title | xml_encode }} " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
-                    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <script>
 window.onload = function () {
@@ -97,26 +65,4 @@ function reading_time () {
     document.getElementById('js-reading-time').appendChild(read_time_node);
   }
 }
-$(function(){
-  var share_modal = $("#share_modal"),
-  update_social_links = true;
-
-  $("#btn_share").click(function(){
-    var that = $(this);
-    share_modal.fadeIn(200);
-    return false;
-  });
-
-  share_modal.click(function(e){
-    if (e.target.className == "wrap" || e.target.id == "share_modal") {
-      share_modal.fadeOut(200);
-    }
-    return false;
-  });
-
-  share_modal.find("div.inner > header > a.close").click(function(){
-    share_modal.fadeOut(200);
-    return false;
-  });
-});
 </script>

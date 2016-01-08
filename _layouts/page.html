@@ -1,6 +1,7 @@
 ---
 layout: default
 body_class: page_template
+image: header.jpg
 ---
 {% if page.image %}
 <div id="feature_image">
@@ -12,7 +13,7 @@ body_class: page_template
 
 <article role="main" class="{% if page.image %}image{% endif %}">
   <header>
-    <a href="{{ site.baseurl }}/" id="home_link">«</a>
+    <a href="{{ site.url }}/" id="home_link">«</a>
     <h1>{{ page.title }}</h1>
   </header>
 
@@ -21,4 +22,3 @@ body_class: page_template
   </div>
   {% include footer.html %}
 </article>
-
