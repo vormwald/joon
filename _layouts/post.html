@@ -30,7 +30,7 @@ body_class: post-template
       <a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url |prepend: site.url }}" target="_blank" id="btn_share" title="Share via Facebook">
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="http://twitter.com/share?url={{ page.url |prepend: site.url }}&text={{ page.title | xml_encode }} - {{ site.title | xml_encode }}&via=twitter_username" target="_blank" id="btn_share" title="Share via Twitter">
+      <a href="http://twitter.com/share?url={{ page.url |prepend: site.url }}&text={{ page.title | xml_encode }} - {{ site.title | xml_encode }}&via={{ site.twitter_username }}" target="_blank" id="btn_share" title="Share via Twitter">
         <i class="fa fa-twitter"></i>
       </a>
     </menu>
