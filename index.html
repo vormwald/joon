@@ -7,7 +7,7 @@ body_class: "home-template user"
 <div class="page-content">
   <div class="wrapper">
     <div class="home">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
       <article class="{%comment%}post_class{%endcomment%}">
 
           {% if post.image %}

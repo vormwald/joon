@@ -11,5 +11,7 @@ baseurl: "/joon" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate: 5
+
 # Build settings
 markdown: kramdown
