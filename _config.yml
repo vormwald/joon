@@ -11,7 +11,13 @@ baseurl: "/joon" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  jekyll
 
+permalink: pretty
 paginate: 5
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
