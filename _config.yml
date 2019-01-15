@@ -3,9 +3,7 @@ title: "Joon: Roon for Jekyll"
 logo: logo.png # image from https://www.flickr.com/photos/lwr/5496279831/in/set-72157594159055823
 email: dnwdjqldb@naver.com
 description: > # this means to ignore newlines until "url:"
-  Roon was an excellent service, with a beautiful understated design. After
-  being acquired by <a href='https://ghost.org'>Ghost</a>, the Roon theme was
-  open sourced.<br> This is my Jekyll port of the Roon theme.
+  About <br> NHN Entertainment <br>
 url: "http://SeonheeKim.github.io" # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
