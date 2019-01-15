@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "url:"
   being acquired by <a href='https://ghost.org'>Ghost</a>, the Roon theme was
   open sourced.<br> This is my Jekyll port of the Roon theme.
 url: "http://vormwald.github.io" # the base hostname & protocol for your site
-baseurl: "/joon" # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  jekyll
 
