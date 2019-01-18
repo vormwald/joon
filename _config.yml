@@ -5,7 +5,7 @@ email: dnwdjqldb@naver.com
 description: > # this means to ignore newlines until "url:"
   About <br> NHN Entertainment <br>
 url: "http://SeonheeKim.github.io" # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl: /SeonheeKim.github.io # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  SeonheeKim
 
