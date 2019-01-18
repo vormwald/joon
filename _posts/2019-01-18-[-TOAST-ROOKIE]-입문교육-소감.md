@@ -1,5 +1,5 @@
 
-({{ site.baseurl }}/content/images/NHN_4floor)
+url({{ site.baseurl }}/content/images/NHN_4floor)
 
 # 입문 교육 소감
 
