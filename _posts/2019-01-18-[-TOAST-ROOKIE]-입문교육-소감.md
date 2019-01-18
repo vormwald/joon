@@ -1,5 +1,5 @@
 
-![1.jpg](/wikis/2389797772001830204/files/2395048021784765776)
+![Test Image]({{ site.baseurl }}/content/images/NHN_4floor)
 
 # 입문 교육 소감
 
