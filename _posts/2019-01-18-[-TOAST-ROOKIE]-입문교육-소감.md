@@ -1,5 +1,5 @@
 
-![Test Image](https://github.com/SeonheeKim/SeonheeKim.github.io/content/images/NHN_4floor)
+![Test Image]({{ site.baseurl }}/content/images/NHN_4floor)
 
 # 입문 교육 소감
 
