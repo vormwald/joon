@@ -1,5 +1,5 @@
 
-![NHN_4floor](../content/images/NHN_4floor.jpg)
+![NHN_4floor](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/NHN_4floor.jpg?raw=true)
 
 ## 입문 교육 소감
 
