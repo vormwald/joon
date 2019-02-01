@@ -1,6 +1,4 @@
 
-![NHN_4floor](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/NHN_4floor.jpg?raw=true)
-
 ## 입문 교육 소감
 
 입사 후 가장 처음 받은 것이 입문 교육이었다. 
@@ -9,6 +7,8 @@
 4일이라는 시간이 짧게 느껴질만큼 알차고 빠르게 지나갔다.
 
 * * *
+![NHN_4floor](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/NHN_4floor.jpg?raw=true)
+
 
 교육 중 강연을 들으면서 제일 많이 든 생각은 "열정적이다"였다. 
 모두 스스로의 목표를 찾고, 그 목표를 위해 열심히 노력한다. 
