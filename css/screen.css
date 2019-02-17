@@ -1154,11 +1154,11 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     height: 80px;
     background-color: #fff;
     border: 1px solid rgba(33, 39, 45, 0.17);
-    -webkit-border-radius: 80px;
-    -moz-border-radius: 80px;
-    -ms-border-radius: 80px;
-    -o-border-radius: 80px;
-    border-radius: 80px;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    -ms-border-radius: 62px;
+    -o-border-radius: 62px;
+    border-radius: 62px;
     z-index: 3;
     -webkit-transition-property: all 0.2s;
     -moz-transition-property: all 0.2s;
