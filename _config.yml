@@ -1,6 +1,7 @@
 # Site settings
 title: "Yet to Define"
 logo: logo.jpeg
+logo_chick : chick.png
 email: dnwdjqldb@naver.com
 description: > # this means to ignore newlines until "url:"
   About <br> NHN Entertainment <br>
