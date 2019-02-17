@@ -23,7 +23,11 @@ body_class: post-template
         {{ content }}
     </div>
 
-    <menu>
+    {% if page.comments != false %}
+      {% include comments.html %}
+    {% endif %}
+
+    <!-- <menu>
       <a href="" id="btn_share" class="btn" title="Share">
         <span aria-hidden="true" data-icon="S"></span>
         <strong>Share</strong>
@@ -31,12 +35,12 @@ body_class: post-template
       <a href="http://twitter.com/share?text={{ page.title | cgi_escape }}&url={{ site.url }}{{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
         <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
       </a>
-    </menu>
+    </menu> -->
 </article>
 
 {% include footer.html %}
 
-<div id="share_modal">
+<!-- <div id="share_modal">
     <div class="wrap">
         <div class="inner">
             <header>
@@ -67,7 +71,7 @@ body_class: post-template
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <script>
@@ -95,26 +99,26 @@ function reading_time () {
     document.getElementById('js-reading-time').appendChild(read_time_node);
   }
 }
-$(function(){
-  var share_modal = $("#share_modal"),
-  update_social_links = true;
+// $(function(){
+//   var share_modal = $("#share_modal"),
+//   update_social_links = true;
 
-  $("#btn_share").click(function(){
-    var that = $(this);
-    share_modal.fadeIn(200);
-    return false;
-  });
+//   $("#btn_share").click(function(){
+//     var that = $(this);
+//     share_modal.fadeIn(200);
+//     return false;
+//   });
 
-  share_modal.click(function(e){
-    if (e.target.className == "wrap" || e.target.id == "share_modal") {
-      share_modal.fadeOut(200);
-    }
-    return false;
-  });
+//   share_modal.click(function(e){
+//     if (e.target.className == "wrap" || e.target.id == "share_modal") {
+//       share_modal.fadeOut(200);
+//     }
+//     return false;
+//   });
 
-  share_modal.find("div.inner > header > a.close").click(function(){
-    share_modal.fadeOut(200);
-    return false;
-  });
-});
+//   share_modal.find("div.inner > header > a.close").click(function(){
+//     share_modal.fadeOut(200);
+//     return false;
+//   });
+// });
 </script>
