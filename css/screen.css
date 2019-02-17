@@ -1150,23 +1150,23 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     display: block;
     top: 30px;
     right: 26px;
-    width: 62px;
-    height: 62px;
+    width: 80ox;
+    height: 80px;
     background-color: #fff;
     border: 1px solid rgba(33, 39, 45, 0.17);
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    border-radius: 60px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    border-radius: 80px;
     z-index: 3;
     -webkit-transition-property: all 0.2s;
     -moz-transition-property: all 0.2s;
     -o-transition-property: all 0.2s;
     transition-property: all 0.2s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
 }
 #blog_badge:hover {
     -webkit-filter: grayscale(0%);
