@@ -34,7 +34,6 @@ for문을 좀 더 나이스(?)하게 바꿀 수 있는 방법이 없을까? 하�
 
 그렇다면 Stream과 같이 언급되는 lambda는 무엇일까?
 
-<br>
 
 ## 람다 lambda
 
@@ -123,5 +122,7 @@ collect를 사용한 후에 다시 .을 이용하여 함수를 사용하려해�
 <br>
 
 (1) 출처 : https://futurecreator.github.io/2018/08/26/java-8-streams/
+
 (2) 출처 : https://jeong-pro.tistory.com/165
+
 (3, 4) 출처 : http://tcpschool.com/java/java_lambda_concept
