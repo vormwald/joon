@@ -449,7 +449,7 @@ article>header .count {
     color: #a4adb6
 }
 article .text {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.7em;
     text-rendering: optimizeLegibility;
     max-width: 100%;
@@ -457,7 +457,7 @@ article .text {
     word-wrap: break-word
 }
 article .text p, article .text pre, article .text img, article .text ol, article .text ul, article .text table, article .text dl, article .text hr, article .text blockquote {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
     text-align: left
 }
 article .text>div {
@@ -641,7 +641,7 @@ article .text blockquote {
     margin: 42px 10px;
     padding-left: 20px;
     border-left: 4px solid #ededee;
-    font-size: 23px
+    font-size: 19px
 }
 article .text table {
     display: block;
