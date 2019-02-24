@@ -78,8 +78,6 @@ Stream에 대한 글들은 이미 많이 존재하기 때문에  나는 내가 �
                                                 .collect(Collectors.toList());
 
 
-
-<br>
 위의 코드는 실제로 for문을 Stream으로 변경한 코드이다. 
 
 기존 for문은 저장해놓지 않아서 해당 자료가 없지만 도메인 별로 유저 리스트가 존재하는 validServiceReceiverMap에서 도메인 리스트와 유저 리스트를 분리하는 작업이다.  
