@@ -9,7 +9,6 @@
 
 > Apache Maven : Java용 프로젝트 관리 도구  
 Dependency를 리스트 형태로 관리한다. Apache ant의 대안으로 만들어졌다.  
-<br>
 
 #### - Ant의 특징
 
@@ -44,9 +43,8 @@ ant는 각 프로젝트에 대해 xml 기반으로 빌드 스크립트를 개발
 
 > Apache Ivy : apache Ant 프로젝트의 서브 프로젝트  
 
-> Ivy is a tool for managing(recording, tracking, resolving and reporting) project dependencies.
+> Ivy is a tool for managing(recording, tracking, resolving and reporting) project dependencies.  
 
-<br>
 
 ivy를 사용함으로써 maven에서와 같이 **dependency를 쉽게 관리할 수 있다.**
 
