@@ -1546,7 +1546,7 @@ body.touch.user article .readmore {
         font-size: 16px
     }
     article .text h1, article .text h2, article .text h3, article .text h4, article .text h5, article .text h6 {
-        margin: 30px 0 8px 0
+        margin: 30px 0 15px 0
     }
     article .text blockquote {
         margin-top: 26px;
