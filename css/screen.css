@@ -449,7 +449,7 @@ article>header .count {
     color: #a4adb6
 }
 article .text {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.7em;
     text-rendering: optimizeLegibility;
     max-width: 100%;
@@ -753,7 +753,7 @@ article.image {
 }
 body.user>header {
     position: relative;
-    margin-bottom: 80px
+    margin-bottom: 70px
 }
 body.user>header .wrap {
     display: -moz-inline-stack;
@@ -777,8 +777,7 @@ body.user article {
     position: relative;
     text-align: center;
     max-width: inherit;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 30px;
     border-bottom: 2px solid #f7f7f7
 }
 body.user article:last-of-type {
@@ -793,7 +792,7 @@ body.user article header {
 }
 body.user article header h1 {
     margin: 0;
-    font-size: 32px
+    font-size: 25px
 }
 body.user article .image-holder {
     height: 300px;
@@ -883,7 +882,7 @@ body.user article .text {
     position: relative;
     text-align: left;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     max-width: 750px
 }
 body.user article .text p {
