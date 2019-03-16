@@ -4,7 +4,7 @@
 
 
 ## New features in Java 7
-
+***
 1. Strings in Switch Statement
 2. Diamond "<>" Operator
 3. Multi-catch similar exceptions
@@ -13,6 +13,7 @@
 
 
 ## New features in Java 8
+***
 1. Lambda Expressions
 2. Functional Interfaces
 3. Method References
