@@ -361,7 +361,10 @@ body>header h1 {
     font-weight: bold
 }
 body>header h1 a {
-    color: #21272d
+    color: #0e3054;
+    font-family: 'Lobster', cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
 }
 body.noimage {
     border-top-width: 4px;
