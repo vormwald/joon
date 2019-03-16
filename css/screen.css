@@ -423,11 +423,11 @@ article time, article time a {
     text-rendering: optimizeLegibility
 }
 article>header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-rendering: optimizeLegibility
 }
 article>header h1 {
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1.2em;
@@ -436,7 +436,8 @@ article>header h1 {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto
+    hyphens: auto;
+    color: #d35c5c;
 }
 article>header .meta {
     display: -moz-inline-stack;
