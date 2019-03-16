@@ -1,7 +1,4 @@
 
-## 입문 교육 소감
-
-<br>
 
 입사 후 가장 처음 받은 것이 입문 교육이었다.  
 입문 교육은 4일 간 진행했다. 인사 제도, 비즈니스 매너, 강연들 등 다양한 내용들이었다.  
@@ -12,7 +9,6 @@
 * * *
 ![NHN_4floor](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/NHN_4floor.jpg?raw=true)
 
-<br>
 
 교육 중 강연을 들으면서 제일 많이 든 생각은 "열정적이다"였다.  
 모두 스스로의 목표를 찾고, 그 목표를 위해 열심히 노력한다.  
