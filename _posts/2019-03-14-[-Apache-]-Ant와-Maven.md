@@ -6,6 +6,7 @@
 *** 
 > Apache Ant : Java 프로그래밍 언어에서 사용하는 자동화된 소프트웨어 빌드 도구  
 빌드를 위한 환경구성에 xml 파일을 사용한다.  
+ 
 > Apache Maven : Java용 프로젝트 관리 도구  
 Dependency를 리스트 형태로 관리한다. Apache ant의 대안으로 만들어졌다.  
 
@@ -41,6 +42,7 @@ ant는 각 프로젝트에 대해 xml 기반으로 빌드 스크립트를 개발
 이 단점을 극복하기 위해 도입한 것이 Apache ivy이다.  
 
 > Apache Ivy : apache Ant 프로젝트의 서브 프로젝트  
+
 > Ivy is a tool for managing(recording, tracking, resolving and reporting) project dependencies.  
 
 
