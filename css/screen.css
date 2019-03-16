@@ -458,7 +458,8 @@ article .text {
     text-rendering: optimizeLegibility;
     max-width: 100%;
     text-align: center;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin-bottom: 5rem;
 }
 article .text p, article .text pre, article .text img, article .text ol, article .text ul, article .text table, article .text dl, article .text hr, article .text blockquote {
     margin-bottom: 17px;
