@@ -368,8 +368,7 @@ body>header h1 {
 body>header h1 a {
     color: #0e3054;
     font-family: 'Lobster', cursive;
-    font-size: 4.5rem;
-    font-weight: bold;
+    font-size: 4.7rem;
 }
 body.noimage {
     border-top-width: 4px;
@@ -561,7 +560,8 @@ article .text h1 {
     font-size: 30px
 }
 article .text h2 {
-    font-size: 28px
+    font-size: 28px;
+    color: #d35c5c;
 }
 article .text h3 {
     font-size: 26px
@@ -570,7 +570,7 @@ article .text h4 {
     font-size: 24px
 }
 article .text h5 {
-    font-size: 22px
+    font-size: 19px
 }
 article .text h6 {
     font-size: 20px
