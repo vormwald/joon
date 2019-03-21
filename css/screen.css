@@ -55,6 +55,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: normal
 }
 
+@font-face {
+    font-family: 'Lobster';
+    src: url("../assets/fonts/Lobster.ttf") format("truetype");
+}
+
 body {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
