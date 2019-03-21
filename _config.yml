@@ -14,7 +14,7 @@ permalink: pretty
 paginate: 5
 
 # Build settings
-markdown: kramdown
+markdown: CommonMark
 highlighter: rouge
 
 gems:
