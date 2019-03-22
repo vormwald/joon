@@ -20,7 +20,7 @@ body_class: post-template
     </header>
 
     <div class="text" id="js-post-content">
-        {{ content }}
+        <a href="{{ page.url }}">{{ content }}</a>
     </div>
 
     {% if page.comments != false %}
