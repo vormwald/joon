@@ -554,14 +554,14 @@ article .text h1, article .text h2, article .text h3, article .text h4, article 
     font-weight: bold;
     margin: 40px 0 8px 0;
     line-height: 1.2em;
-    text-align: left
+    text-align: left;
+    color: #d35c5c;
 }
 article .text h1 {
     font-size: 30px
 }
 article .text h2 {
     font-size: 28px;
-    color: #d35c5c;
 }
 article .text h3 {
     font-size: 26px
