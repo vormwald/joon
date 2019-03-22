@@ -12,7 +12,7 @@ body_class: post-template
 
 <article role="main" class="{% if page.image %}image{% endif %}">
     <header>
-      <a href="{{ site.baseurl }}/" id="home_link">«</a>
+      <a href="{{ site.baseurl }}/" class="home_link">«</a>
       <div class="meta"><time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
         <span class="count" id="js-reading-time">&nbsp;</span>
       </div>

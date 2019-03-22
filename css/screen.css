@@ -402,7 +402,7 @@ article {
     max-width: 850px;
     text-align: left
 }
-article #home_link {
+article .home_link {
     font-family: 'Pictos Custom';
     color: #909396;
     margin-right: 10px;
@@ -418,7 +418,7 @@ article #home_link {
     border-radius: 20px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
-article #home_link:hover {
+article .home_link:hover {
     color: #21272d;
     background-color: #ededee
 }
@@ -1292,7 +1292,7 @@ html[dir=rtl] article .text, html[dir=rtl] article .text *, html[dir=rtl] articl
 html[dir=rtl] body>header *, html[dir=rtl] article>menu a#btn_comment, html[dir=rtl] #post_nav a {
     direction: rtl
 }
-html[dir=rtl] body>a.btn.nav span, html[dir=rtl] body>footer #btn_feed span, html[dir=rtl] .post-footer #user_profile>#btn_feed span, html[dir=rtl] #post_nav a span, html[dir=rtl] article>header a#home_link {
+html[dir=rtl] body>a.btn.nav span, html[dir=rtl] body>footer #btn_feed span, html[dir=rtl] .post-footer #user_profile>#btn_feed span, html[dir=rtl] #post_nav a span, html[dir=rtl] article>header a.home_link {
     direction: ltr;
     unicode-bidi: bidi-override
 }
@@ -1309,7 +1309,7 @@ html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 17px
 }
-html[dir=rtl] article>header a#home_link {
+html[dir=rtl] article>header a.home_link {
     margin-left: 10px;
     margin-right: 0
 }
