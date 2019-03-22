@@ -3,6 +3,10 @@ a {
     color: #d35c5c;
 }
 
+a > p {
+    color: #ffffff;
+}
+
 /* Border at the top of the page */
 body>header,
 body.noimage {
