@@ -479,7 +479,8 @@ article .text object {
     display: block
 }
 article .text b, article .text strong {
-    font-weight: bold
+    font-weight: bold;
+    color: #d35c5c;
 }
 article .text em, article .text i {
     font-style: italic
