@@ -4,27 +4,28 @@ body_class: post-template
 ---
 {% if page.image %}
 <div id="feature_image">
-  <div class="inner" style="background-image: url('{{ site.baseurl }}/content/images//{{ page.image }}')">
-    <img src='{{ site.baseurl }}/content/images/{{ page.image }}'>
+    <div class="inner" style="background-image: url('{{ site.baseurl }}/content/images//{{ page.image }}')">
+        <img src='{{ site.baseurl }}/content/images/{{ page.image }}'>
     </div>
 </div>
 {% endif %}
 
 <article role="main" class="{% if page.image %}image{% endif %}">
     <header>
-      <a href="{{ site.baseurl }}/" id="home_link">«</a>
-      <div class="meta"><time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
-        <span class="count" id="js-reading-time">&nbsp;</span>
-      </div>
-      <h1>{{ page.title }}</h1>
+        <a href="{{ site.baseurl }}/" id="home_link">«</a>
+        <div class="meta">
+            <time datetime="{{ page.date | date:'%Y-%m-%d' }}"><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time>
+            <span class="count" id="js-reading-time">&nbsp;</span>
+        </div>
+        <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
     </header>
 
     <div class="text" id="js-post-content">
-        <a href="{{ page.url }}">{{ content }}</a>
+        {{ content }}
     </div>
 
     {% if page.comments != false %}
-      {% include comments.html %}
+    {% include comments.html %}
     {% endif %}
 
     <!-- <menu>
@@ -75,50 +76,53 @@ body_class: post-template
 
 
 <script>
-window.onload = function () {
-  reading_time();
-}
-function get_text(el) {
-  ret = "";
-  var length = el.childNodes.length;
-  for(var i = 0; i < length; i++) {
-    var node = el.childNodes[i];
-    if(node.nodeType != 8) {
-      ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+    window.onload = function () {
+        reading_time();
     }
-  }
-  return ret;
-}
-function reading_time () {
-  var post_content = document.getElementById('js-post-content');
-  if (post_content) {
-    var words = get_text(post_content),
-      count = words.split(/\s+/).length,
-    read_time = Math.ceil((count / 150)),
-        read_time_node = document.createTextNode(read_time + ' min read');
-    document.getElementById('js-reading-time').appendChild(read_time_node);
-  }
-}
-// $(function(){
-//   var share_modal = $("#share_modal"),
-//   update_social_links = true;
 
-//   $("#btn_share").click(function(){
-//     var that = $(this);
-//     share_modal.fadeIn(200);
-//     return false;
-//   });
+    function get_text(el) {
+        ret = "";
+        var length = el.childNodes.length;
+        for (var i = 0; i < length; i++) {
+            var node = el.childNodes[i];
+            if (node.nodeType != 8) {
+                ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+            }
+        }
+        return ret;
+    }
 
-//   share_modal.click(function(e){
-//     if (e.target.className == "wrap" || e.target.id == "share_modal") {
-//       share_modal.fadeOut(200);
-//     }
-//     return false;
-//   });
+    function reading_time() {
+        var post_content = document.getElementById('js-post-content');
+        if (post_content) {
+            var words = get_text(post_content),
+                count = words.split(/\s+/).length,
+                read_time = Math.ceil((count / 150)),
+                read_time_node = document.createTextNode(read_time + ' min read');
+            document.getElementById('js-reading-time').appendChild(read_time_node);
+        }
+    }
 
-//   share_modal.find("div.inner > header > a.close").click(function(){
-//     share_modal.fadeOut(200);
-//     return false;
-//   });
-// });
+    // $(function(){
+    //   var share_modal = $("#share_modal"),
+    //   update_social_links = true;
+
+    //   $("#btn_share").click(function(){
+    //     var that = $(this);
+    //     share_modal.fadeIn(200);
+    //     return false;
+    //   });
+
+    //   share_modal.click(function(e){
+    //     if (e.target.className == "wrap" || e.target.id == "share_modal") {
+    //       share_modal.fadeOut(200);
+    //     }
+    //     return false;
+    //   });
+
+    //   share_modal.find("div.inner > header > a.close").click(function(){
+    //     share_modal.fadeOut(200);
+    //     return false;
+    //   });
+    // });
 </script>
