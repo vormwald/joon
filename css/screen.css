@@ -338,7 +338,7 @@ hr {
     height: 1px;
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5
+    background-color: #0e3054;
 }
 .btn {
     display: -moz-inline-stack;
@@ -349,7 +349,7 @@ hr {
     *display: inline;
     padding: 20px 30px;
     margin: 0;
-    background-color: #909396;
+    background-color: #0e3054;
     color: #fff;
     font-weight: bold;
     -webkit-border-radius: 50px;
