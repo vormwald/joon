@@ -3,6 +3,10 @@ a {
     color: #d35c5c;
 }
 
+a > p {
+    color: #000000;
+}
+
 /* Border at the top of the page */
 body>header,
 body.noimage {
@@ -53,6 +57,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
          url("../assets/fonts/pictos_custom.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url("../assets/fonts/Lobster.ttf") format("truetype");
 }
 
 body {
@@ -363,8 +372,7 @@ body>header h1 {
 body>header h1 a {
     color: #0e3054;
     font-family: 'Lobster', cursive;
-    font-size: 4.5rem;
-    font-weight: bold;
+    font-size: 4.7rem;
 }
 body.noimage {
     border-top-width: 4px;
@@ -475,7 +483,8 @@ article .text object {
     display: block
 }
 article .text b, article .text strong {
-    font-weight: bold
+    font-weight: bold;
+    color: #d35c5c;
 }
 article .text em, article .text i {
     font-style: italic
@@ -550,13 +559,14 @@ article .text h1, article .text h2, article .text h3, article .text h4, article 
     font-weight: bold;
     margin: 40px 0 8px 0;
     line-height: 1.2em;
-    text-align: left
+    text-align: left;
+    color: #d35c5c;
 }
 article .text h1 {
     font-size: 30px
 }
 article .text h2 {
-    font-size: 28px
+    font-size: 28px;
 }
 article .text h3 {
     font-size: 26px
@@ -565,7 +575,7 @@ article .text h4 {
     font-size: 24px
 }
 article .text h5 {
-    font-size: 22px
+    font-size: 18px
 }
 article .text h6 {
     font-size: 20px
