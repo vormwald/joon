@@ -3,6 +3,10 @@ a {
     color: #d35c5c;
 }
 
+.highlighter-rouge {
+    background-color: #d35c5c;
+}
+
 a > p {
     color: #000000;
 }
