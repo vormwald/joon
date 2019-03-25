@@ -81,7 +81,7 @@ body {
     font-family: 'Noto Sans KR', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
-    font-family: 'Noto Sans KR', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body.serif {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif
@@ -101,11 +101,11 @@ body.serif article time, body.serif article>.meta, body.serif article>header h1,
     font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article .text {
-    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-family: 'Noto Sans KR', "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 17px
 }
 body.serif article .text blockquote {
-    font-family: "Merriweather", "Georgia", "Times New Roman", serif
+    font-family: 'Noto Sans KR', "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article>menu #btn_comment {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
