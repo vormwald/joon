@@ -64,8 +64,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: normal
 }
 
-@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css); .jejugothic * { font-family: 'Jeju Gothic', sans-serif; }
-
 @font-face {
     font-family: 'Lobster';
     src: url("../assets/fonts/Lobster.ttf") format("truetype");
