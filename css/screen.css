@@ -876,8 +876,7 @@ body.user article .readmore {
     *display: inline;
     font-size: 13px;
     line-height: 1em;
-    color: #a4adb6;
-    border-bottom: 1px solid #ededee;
+    border-bottom: 1px solid #d35c5c;
     -webkit-box-shadow: white 0 0 14px;
     -moz-box-shadow: white 0 0 14px;
     box-shadow: white 0 0 14px;
