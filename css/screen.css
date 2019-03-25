@@ -1,4 +1,5 @@
-/* Link colour */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 a {
     color: #d35c5c;
 }
@@ -68,8 +69,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     src: url("../assets/fonts/Lobster.ttf") format("truetype");
 }
 
+
 body {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: 'Noto Sans KR', sans-serif;
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
