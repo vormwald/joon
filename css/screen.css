@@ -557,7 +557,7 @@ article .text code {
     overflow-x: auto;
     padding: 0 5px;
     font-size: 14px;
-    font-family: "Courier New", "Courier", monospace;
+    font-family: 'Noto Sans KR', "Courier New", "Courier", monospace;
     -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #ededee;
     background-color: #f9f9fa;
