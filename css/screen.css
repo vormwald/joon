@@ -66,10 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url("../assets/fonts/NotoSansCJKkr-Regular.otf") format("opentype"),
-         url("../assets/fonts/NotoSansCJKkr-Black.otf") format("opentype"),
-         url("../assets/fonts/NotoSansCJKkr-Bold.otf") format("opentype"),
-         url("../assets/fonts/NotoSansCJKkr-Medium.otf") format("opentype");
+    src: url("../assets/fonts/NotoSansCJKkr-Regular.otf") format("opentype");
 }
 
 @font-face {
