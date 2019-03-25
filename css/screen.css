@@ -666,9 +666,9 @@ article .text hr {
     background-color: #ededee
 }
 article .text blockquote {
-    margin: 22px 10px;
+    margin: 28px 10px;
     padding-left: 20px;
-    border-left: 4px solid #ededee;
+    border-left: 4px solid orange;
     font-size: 17px
 }
 article .text table {
