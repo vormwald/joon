@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: normal
 }
 
-@font-face { font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: '123RF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/123RF.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 @font-face {
     font-family: 'Lobster';
@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    font-family: 'S-CoreDream-5Medium', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: '123RF', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
@@ -95,11 +95,11 @@ body.serif article time, body.serif article>.meta, body.serif article>header h1,
     font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article .text {
-    font-family: 'S-CoreDream-5Medium', "Merriweather", "Georgia", "Times New Roman", serif;
+    font-family: '123RF', "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 17px
 }
 body.serif article .text blockquote {
-    font-family: 'S-CoreDream-5Medium', "Merriweather", "Georgia", "Times New Roman", serif
+    font-family: '123RF', "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article>menu #btn_comment {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
@@ -524,7 +524,7 @@ article .text pre {
     max-width: 100%;
     overflow-x: auto;
     line-height: 1.4em;
-    font-family: 'S-CoreDream-5Medium', "Courier New", "Courier", monospace;
+    font-family: '123RF', "Courier New", "Courier", monospace;
     -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #ededee;
     background-color: #f9f9fa;
