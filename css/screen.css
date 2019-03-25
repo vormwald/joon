@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @font-face {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
     src: url("../assets/fonts/NotoSansCJKkr-Black.otf") format("opentype"),
          url("../assets/fonts/NotoSansCJKkr-Bold.otf") format("opentype"),
          url("../assets/fonts/NotoSansCJKkr-Medium.otf") format("opentype"),
@@ -78,10 +78,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: 'Noto Sans KR', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body.serif {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif
@@ -530,7 +530,7 @@ article .text pre {
     max-width: 100%;
     overflow-x: auto;
     line-height: 1.4em;
-    font-family: "Courier New", "Courier", monospace;
+    font-family: 'Noto Sans KR', "Courier New", "Courier", monospace;
     -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #ededee;
     background-color: #f9f9fa;
