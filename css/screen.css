@@ -874,8 +874,7 @@ body.user article .readmore {
     *vertical-align: auto;
     zoom: 1;
     *display: inline;
-    font-size: 13px;
-    line-height: 1em;
+    line-height: 1.7em;
     border-bottom: 1px solid #d35c5c;
     -webkit-box-shadow: white 0 0 14px;
     -moz-box-shadow: white 0 0 14px;
