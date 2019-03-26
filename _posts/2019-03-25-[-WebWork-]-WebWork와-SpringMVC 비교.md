@@ -27,7 +27,8 @@
 > 
 > Apache Struts : Java EE 웹 애플리케이션을 개발하기 위한 오픈소스 프레임워크.  
 > Struts2는 사용자에게 요청을 받고 원활하게 작동할 수 있도록 환경을 꾸미고,   
-> 어떤 액션을 호출할 지 결정한 후 액션을 실행한다. Result를 통해 최종 응답 데이터를 사용자에게 반환하는 역할들을 제공한다.  
+> 어떤 액션을 호출할 지 결정한 후 액션을 실행한다.  
+> Result를 통해 최종 응답 데이터를 사용자에게 반환하는 역할들을 제공한다.  
 
 ### Lifecycle  
 1. request begins when the servlet container receives a new request  
