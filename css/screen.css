@@ -1,4 +1,7 @@
 /* Link colour */
+
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
 a {
     color: #d35c5c;
 }
@@ -8,7 +11,7 @@ a {
 }
 
 a > p {
-    color: #000000;
+    color: #0e3054;
 }
 
 /* Border at the top of the page */
@@ -41,7 +44,8 @@ caption, th, td {
     vertical-align: middle
 }
 q, blockquote {
-    quotes: none
+    quotes: none;
+    color: #909396;
 }
 q:before, q:after, blockquote:before, blockquote:after {
     content: "";
@@ -69,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: 'Jeju Gothic', "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
@@ -92,11 +96,11 @@ body.serif article time, body.serif article>.meta, body.serif article>header h1,
     font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article .text {
-    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-family: 'Jeju Gothic', "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 17px
 }
 body.serif article .text blockquote {
-    font-family: "Merriweather", "Georgia", "Times New Roman", serif
+    font-family: 'Jeju Gothic', "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article>menu #btn_comment {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
@@ -335,10 +339,10 @@ a:active {
 }
 hr {
     border: none;
-    height: 1px;
+    height: 2px;
     margin: 0;
     padding: 0;
-    background-color: #0e3054;
+    background-color: #eeeeee;
 }
 .btn {
     display: -moz-inline-stack;
@@ -376,7 +380,7 @@ body>header h1 {
 body>header h1 a {
     color: #0e3054;
     font-family: 'Lobster', cursive;
-    font-size: 4.7rem;
+    font-size: 5rem;
 }
 body.noimage {
     border-top-width: 4px;
@@ -465,7 +469,7 @@ article>header .count {
     color: #a4adb6
 }
 article .text {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7em;
     text-rendering: optimizeLegibility;
     max-width: 100%;
@@ -521,7 +525,7 @@ article .text pre {
     max-width: 100%;
     overflow-x: auto;
     line-height: 1.4em;
-    font-family: "Courier New", "Courier", monospace;
+    font-family: 'Jeju Gothic', "Courier New", "Courier", monospace;
     -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #ededee;
     background-color: #f9f9fa;
@@ -548,7 +552,7 @@ article .text code {
     overflow-x: auto;
     padding: 0 5px;
     font-size: 14px;
-    font-family: "Courier New", "Courier", monospace;
+    font-family: 'Jeju Gothic', "Courier New", "Courier", monospace;
     -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #ededee;
     background-color: #f9f9fa;
@@ -573,16 +577,16 @@ article .text h2 {
     font-size: 28px;
 }
 article .text h3 {
-    font-size: 23px
+    font-size: 24px
 }
 article .text h4 {
-    font-size: 21px
+    font-size: 22px
 }
 article .text h5 {
-    font-size: 15px
+    font-size: 20px
 }
 article .text h6 {
-    font-size: 12px
+    font-size: 18px
 }
 article .text img {
     display: block;
@@ -657,9 +661,9 @@ article .text hr {
     background-color: #ededee
 }
 article .text blockquote {
-    margin: 22px 10px;
+    margin: 28px 10px;
     padding-left: 20px;
-    border-left: 4px solid #ededee;
+    border-left: 4px solid orange;
     font-size: 17px
 }
 article .text table {
@@ -797,7 +801,7 @@ body.user article {
     text-align: center;
     max-width: inherit;
     margin-top: 30px;
-    border-bottom: 2px solid #f7f7f7
+    border-bottom: 2px solid #f7f7f7;
 }
 body.user article:last-of-type {
     border-bottom: none;
@@ -871,10 +875,8 @@ body.user article .readmore {
     *vertical-align: auto;
     zoom: 1;
     *display: inline;
-    font-size: 13px;
-    line-height: 1em;
-    color: #a4adb6;
-    border-bottom: 1px solid #ededee;
+    line-height: 1.7em;
+    border-bottom: 1px solid #d35c5c;
     -webkit-box-shadow: white 0 0 14px;
     -moz-box-shadow: white 0 0 14px;
     box-shadow: white 0 0 14px;
@@ -903,7 +905,8 @@ body.user article .text {
     text-align: left;
     margin: 0 auto;
     padding-bottom: 40px;
-    max-width: 750px
+    max-width: 750px;
+    /*border-bottom: solid 2px #f2f2f2;*/
 }
 body.user article .text p {
     display: inline;
