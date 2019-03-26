@@ -1,17 +1,20 @@
-<header role="banner">
+<header role="banner" class="site-category">
 <div class="wrap">
   <h1>
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
   </h1>
   <hr>
-    <nav class="site-nav">
-    <div class="trigger">
-    {% for page in site.pages %}
-    {% if page.title %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {% endif %}
-    {% endfor %}
-    </div>
-    </nav>
+    <ul>
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+      {% if node.title != null %}
+      {% if node.layout == "category" %}
+      <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+             href="{{ site.url }}{{ node.url }}">{{ node.title }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+
+    </ul>
 </div>
 </header>
