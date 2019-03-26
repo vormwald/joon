@@ -1,22 +1,22 @@
-# SpringMVC¿Í WebWork ºñ±³  
+# WebWorkì™€ SpringMVC 
 
-¸ñÂ÷  
-1. SpringMVC¿Í WebWorkÀÇ Â÷ÀÌÁ¡  
+ëª©ì°¨  
+1. SpringMVCì™€ WebWorkì˜ ì°¨ì´ì   
 2. SpringMVC  
 3. WebWork  
-4. ¿ë¾î  
+4. ìš©ì–´  
 
-## SpringMVC¿Í WebWork ÁÖ¿ä Â÷ÀÌÁ¡  
+## SpringMVCì™€ WebWork ì£¼ìš” ì°¨ì´ì   
 ### Controller vs Action  
 - Controller  
-    - ½Ì±ÛÅæ  
-    - Spring Bean À¸·Î °ü¸® µÈ´Ù  
-        - Proxy ±â¹İÀÇ AOP Àû¿ëÀÌ °¡´É  
+    - ì‹±ê¸€í†¤  
+    - Spring Bean ìœ¼ë¡œ ê´€ë¦¬ ëœë‹¤  
+        - Proxy ê¸°ë°˜ì˜ AOP ì ìš©ì´ ê°€ëŠ¥  
 - Action  
-    - ½Ì±ÛÅæÀÌ ¾Æ´Ô : ¸Å ¸®Äù½ºÆ®¸¶´Ù ÀÎ½ºÅÏ½º »ı¼º  
+    - ì‹±ê¸€í†¤ì´ ì•„ë‹˜ : ë§¤ ë¦¬í€˜ìŠ¤íŠ¸ë§ˆë‹¤ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±  
 
 ## SpringMVC  
-> SpringÀ» À¥ ±â¹İ¿¡¼­ º¸´Ù Æí¸®ÇÏ°Ô ÀÌ¿ëÇÏ±â À§ÇÑ ÇÁ·¹ÀÓ¿öÅ©  
+> Springì„ ì›¹ ê¸°ë°˜ì—ì„œ ë³´ë‹¤ í¸ë¦¬í•˜ê²Œ ì´ìš©í•˜ê¸° ìœ„í•œ í”„ë ˆì„ì›Œí¬  
 
 
 ![image.png](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/SpringMVC.png?raw=true)
@@ -25,9 +25,9 @@
 ## WebWork  
 > architecture of WebWork was based on the MVC Framework, Command, and Dispatcher patterns and the principle of IoC  
 > 
-> Apache Struts : Java EE À¥ ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀ» °³¹ßÇÏ±â À§ÇÑ ¿ÀÇÂ¼Ò½º ÇÁ·¹ÀÓ¿öÅ©.  
-> Struts2´Â »ç¿ëÀÚ¿¡°Ô ¿äÃ»À» ¹Ş°í ¿øÈ°ÇÏ°Ô ÀÛµ¿ÇÒ ¼ö ÀÖµµ·Ï È¯°æÀ» ²Ù¹Ì°í,   
-> ¾î¶² ¾×¼ÇÀ» È£ÃâÇÒ Áö °áÁ¤ÇÑ ÈÄ ¾×¼ÇÀ» ½ÇÇàÇÑ´Ù. Result¸¦ ÅëÇØ ÃÖÁ¾ ÀÀ´ä µ¥ÀÌÅÍ¸¦ »ç¿ëÀÚ¿¡°Ô ¹İÈ¯ÇÏ´Â ¿ªÇÒµéÀ» Á¦°øÇÑ´Ù.  
+> Apache Struts : Java EE ì›¹ ì• í”Œë¦¬ì¼€ì´ì…˜ì„ ê°œë°œí•˜ê¸° ìœ„í•œ ì˜¤í”ˆì†ŒìŠ¤ í”„ë ˆì„ì›Œí¬.  
+> Struts2ëŠ” ì‚¬ìš©ìì—ê²Œ ìš”ì²­ì„ ë°›ê³  ì›í™œí•˜ê²Œ ì‘ë™í•  ìˆ˜ ìˆë„ë¡ í™˜ê²½ì„ ê¾¸ë¯¸ê³ ,   
+> ì–´ë–¤ ì•¡ì…˜ì„ í˜¸ì¶œí•  ì§€ ê²°ì •í•œ í›„ ì•¡ì…˜ì„ ì‹¤í–‰í•œë‹¤. Resultë¥¼ í†µí•´ ìµœì¢… ì‘ë‹µ ë°ì´í„°ë¥¼ ì‚¬ìš©ìì—ê²Œ ë°˜í™˜í•˜ëŠ” ì—­í• ë“¤ì„ ì œê³µí•œë‹¤.  
 
 ### Lifecycle  
 1. request begins when the servlet container receives a new request  
@@ -43,7 +43,7 @@
 
 ![image.png](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/WebWork.png?raw=true)
 
-## ¿ë¾î  
+## ìš©ì–´  
  (I think?)  
  
 | SpringMVC | WebWork |
@@ -56,8 +56,8 @@
 
 <br>
 
-Âü°í : https://en.wikipedia.org/wiki/WebWork  
-Âü°í : http://theeye.pe.kr/archives/260  
-Âü°í : https://mer-bleu.tistory.com/24  
-ÀÌ¹ÌÁö ÃâÃ³ : https://nhnent.dooray.com/project/2210798153185693714/2249870144271952624  
-ÀÌ¹ÌÁö ÃâÃ³ : https://mer-bleu.tistory.com/24  
+ì°¸ê³  : https://en.wikipedia.org/wiki/WebWork  
+ì°¸ê³  : http://theeye.pe.kr/archives/260  
+ì°¸ê³  : https://mer-bleu.tistory.com/24  
+ì´ë¯¸ì§€ ì¶œì²˜ : https://nhnent.dooray.com/project/2210798153185693714/2249870144271952624  
+ì´ë¯¸ì§€ ì¶œì²˜ : https://mer-bleu.tistory.com/24  
