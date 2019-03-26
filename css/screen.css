@@ -44,7 +44,8 @@ caption, th, td {
     vertical-align: middle
 }
 q, blockquote {
-    quotes: none
+    quotes: none;
+    color: #909396;
 }
 q:before, q:after, blockquote:before, blockquote:after {
     content: "";
