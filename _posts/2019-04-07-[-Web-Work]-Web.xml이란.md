@@ -132,7 +132,7 @@ dispatcher가 가질 수 있는 값은 REQUEST, INCLUDE, FORWARD, ERROR가 있�
 
 위의 예시에서처럼 Throwable exception이 발생했거나 404 오류일 경우 location에서 지정한 errorHandler servlet으로 연결해서 처리한다.  
 
-## 프로젝트별 web.xml 특징
+## 프로젝트별 Web.xml 특징
 
 ***
 
