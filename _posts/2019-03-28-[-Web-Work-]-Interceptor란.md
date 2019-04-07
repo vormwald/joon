@@ -6,19 +6,21 @@ xwork-(xxxxxx).xml : 각 파트별로 설정 세분화. 필요한 action을 정�
 
      <interceptor name="interceptorExample" class="com.test.interceptor.InterceptorExample"/> 
 
-interceptor를 정의하는 부분
-위의 경우 InterceptorExample class를 interceptorExample라는 이름으로 정의하는 것이다.
+interceptor를 정의하는 부분  
+위의 경우 InterceptorExample class를 interceptorExample라는 이름으로 정의하는 것이다.  
  
     <interceptor-ref name="interceptorExample"/>
-이미 정의된 interceptor를 사용하는 부분
-reference, 즉 name에 해당하는 interceptor를 참조한다는 것
+
+이미 정의된 interceptor를 사용하는 부분  
+reference, 즉 name에 해당하는 interceptor를 참조한다는 것  
 
      <interceptor-stack name="interceptorExampleStack">
             <interceptor-ref name="interceptorOne"/>
             <interceptor-ref name="interceptorTwo"/>
      </interceptor-stack>
-interceptor를 여러 개 적용해야할 때 interceptor-stack를 통해 하나의 name으로 정의할 수 있다.
-interceptor-ref로 stack을 참조할 수도 있다.
+
+interceptor를 여러 개 적용해야할 때 interceptor-stack를 통해 하나의 name으로 정의할 수 있다.  
+interceptor-ref로 stack을 참조할 수도 있다.  
 
 * * *
 
