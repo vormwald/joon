@@ -6,7 +6,9 @@
 > 각 애플리케이션의 환경을 설정하는 역할을 한다.  
 > 서버가 처음 로딩될 때 읽어들이고, 해당 환경설정에 대해 tomcat에 적용하여 서버를 시작한다.  
 
-## web.xml tag
+***
+
+## Web.xml tag
 **web-app**
 
     <web-app xmlns="http://java.sun.com/xml/ns/j2ee"
@@ -131,6 +133,8 @@ dispatcher가 가질 수 있는 값은 REQUEST, INCLUDE, FORWARD, ERROR가 있�
 위의 예시에서처럼 Throwable exception이 발생했거나 404 오류일 경우 location에서 지정한 errorHandler servlet으로 연결해서 처리한다.  
 
 ## 프로젝트별 web.xml 특징
+
+***
 
 ### WebWork
 - 클라이언트의 요청에 filter를 통해 알맞은 가공을 하고(filter chain 통과)  
