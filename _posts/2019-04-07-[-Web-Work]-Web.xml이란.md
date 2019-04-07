@@ -1,12 +1,11 @@
 # Web.xml
-<br>
 
-> web.xml : 웹 애플리케이션의 deployment descriptor(배포 설명자)
-> 각 애플리케이션의 환경을 설정하는 역할을 한다.
-> 서버가 처음 로딩될 때 읽어들이고, 해당 환경설정에 대해 tomcat에 적용하여 서버를 시작한다.
+> web.xml : 웹 애플리케이션의 deployment descriptor(배포 설명자)  
+> 각 애플리케이션의 환경을 설정하는 역할을 한다.  
+> 서버가 처음 로딩될 때 읽어들이고, 해당 환경설정에 대해 tomcat에 적용하여 서버를 시작한다.  
 
 ## web.xml tag
-web-app
+**web-app**
 
     <web-app xmlns="http://java.sun.com/xml/ns/j2ee"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -18,7 +17,7 @@ web-app
 xmlns로 XML Schemas for J2EE Deployment Descriptors 파일이 존재하는 위치를 선언
 
 * * *
-context-param
+**context-param**
 
     <context-param>
             <param-name>contextConfigLocation</param-name>
@@ -41,7 +40,7 @@ context-param
 
 
 * * *
-listener
+**listener**
 
     <listener>
             <listener-class>com.nhncorp.lucy.securitybeans.listener.DefencePolicyInitializer</listener-class>
@@ -52,7 +51,7 @@ listener
 listener로 정의한 클래스들을 로드한다.
 
 * * *
-filter 
+**filter**
 
     <filter>
             <filter-name>exampleServiceFilter</filter-name>
@@ -64,7 +63,7 @@ filter
 위의 예시에서는 ExampleServiceFilter 클래스를 exampleServiceFilter라는 이름으로 정의한다
 
 * * *
-filter-mapping
+**filter-mapping**
 
     <filter-mapping>
             <filter-name>exampleServiceFilter</filter-name>
@@ -75,15 +74,15 @@ filter-mapping
 
 `지정된 url pattern으로 들어온 모든 요청에 filter를 적용하여 가공한 후 웹 서버로 보낸다.`
 
-위의 예시는 .service으로 끝나는 모든 url 요청에 대해 exampleServiceFilter로 정의된 filter를 적용한다는 뜻이다.
+위의 예시는 .service으로 끝나는 모든 url 요청에 대해 exampleServiceFilter로 정의된 filter를 적용한다는 뜻이다.  
 
-이때 <dispatcher> forward가 존재하는데 일반 url 요청 아니라 forward()를 통해 들어올 경우도 filter를 적용한다는 의미이다.
-(ex. <jsp:forward ...>)
+이때 <dispatcher> forward가 존재하는데 일반 url 요청 아니라 forward()를 통해 들어올 경우도 filter를 적용한다는 의미이다.  
+(ex. <jsp:forward ...>)  
 
-dispatcher가 가질 수 있는 값은 REQUEST, INCLUDE, FORWARD, ERROR가 있다.
+dispatcher가 가질 수 있는 값은 REQUEST, INCLUDE, FORWARD, ERROR가 있다.  
 
 * * *
-welcome-file-list
+**welcome-file-list**
 
     <welcome-file-list>
             <welcome-file>index.jsp</welcome-file>
@@ -92,7 +91,7 @@ welcome-file-list
 `최초로 보여주는 페이지 설정`
 
 * * *
-servlet
+**servlet**
 
     <servlet>
             <servlet-name>errorHandler</servlet-name>
@@ -104,7 +103,7 @@ servlet
 `jsp/servlet에서 사용되는 servlet 이름을 등록, 초기화, servlet class 등록`
 
 * * *
-servlet-mapping
+**servlet-mapping**
 
     <servlet-mapping>
             <servlet-name>errorHandler</servlet-name>
@@ -114,7 +113,7 @@ servlet-mapping
 `지정된 url 패턴으로 들어온 모든 요청에 대해 적용할 servlet 정의`
 
 * * *
-error-page
+**error-page**
 
     <error-page>
             <exception-type>java.lang.Throwable</exception-type>
@@ -127,26 +126,26 @@ error-page
 
 `오류가 발생했을 경우 location으로 연결`
 
-위의 예시에서처럼 Throwable exception이 발생했거나 404 오류일 경우 location에서 지정한 errorHandler servlet으로 연결해서 처리한다.
+위의 예시에서처럼 Throwable exception이 발생했거나 404 오류일 경우 location에서 지정한 errorHandler servlet으로 연결해서 처리한다.  
 
 ## 프로젝트별 web.xml 특징
 
 ### WebWork
-- 클라이언트의 요청에 filter를 통해 알맞은 가공을 하고(filter chain 통과) 
-- FilterDispatcher가 Action Mapper를 이용해 가공 결과에 매핑되는 action 클래스를 찾는다. 
-- 이 과정을 거치기 위해서 web.xml에 filter들의 정의가 필요하다.
+- 클라이언트의 요청에 filter를 통해 알맞은 가공을 하고(filter chain 통과)  
+- FilterDispatcher가 Action Mapper를 이용해 가공 결과에 매핑되는 action 클래스를 찾는다.  
+- 이 과정을 거치기 위해서 web.xml에 filter들의 정의가 필요하다.  
 
 ### WebWork + SpringMVC
-- 기존 WebWork 프로젝트의 filter, servlet 등 설정들과 SpringMVC의 DispatcherServlet이 web.xml에 함께 존재하는 형태
-    1. 기존 WebWork filter들에 매핑되는 url 요청이 들어올 경우 : 해당 filter를 거친 후 매핑되는 action을 검색한다. (Webwork flow)
-    2. 새로운 url 요청일 경우 : 최종 filter(이전의 filter들과 매핑되지 않을 것이므로) 이후 DispatcherServlet를 통해 처리
-    (이때 DelegatingFilterDispatcher를 최하위 Filter로 두고 servlet이 처리되도록 한다. 이후 처리 Servlet은 DispatcherServlet이 처리한다.)
+- 기존 WebWork 프로젝트의 filter, servlet 등 설정들과 SpringMVC의 DispatcherServlet이 web.xml에 함께 존재하는 형태  
+    1. 기존 WebWork filter들에 매핑되는 url 요청이 들어올 경우 : 해당 filter를 거친 후 매핑되는 action을 검색한다. (Webwork flow)  
+    2. 새로운 url 요청일 경우 : 최종 filter(이전의 filter들과 매핑되지 않을 것이므로) 이후 DispatcherServlet를 통해 처리  
+    (이때 DelegatingFilterDispatcher를 최하위 Filter로 두고 servlet이 처리되도록 한다. 이후 처리 Servlet은 DispatcherServlet이 처리한다.)  
 
-- WebWork 기본적인 FLOW 구조 : ActionContextCleanUp > ~~sitemesh filter~~ > DelegatingFilterDispatcher 순으로 호출 필요
+- WebWork 기본적인 FLOW 구조 : ActionContextCleanUp > ~~sitemesh filter~~ > DelegatingFilterDispatcher 순으로 호출 필요  
 
 ### SpringMVC
-- 클라이언트 요청을 처리하기 위해 별도의 filter나 servlet을 web.xml에서 정의할 필요가 없다.
-- Spring의 DisaptcherServlet에서 모든 요청(url pattern "/")을 처리한다.
+- 클라이언트 요청을 처리하기 위해 별도의 filter나 servlet을 web.xml에서 정의할 필요가 없다.  
+- Spring의 DisaptcherServlet에서 모든 요청(url pattern "/")을 처리한다.  
 (Controller Mapping 및 View 검색, 출력 등)
 
 ![dispatcherServlet](https://github.com/SeonheeKim/SeonheeKim.github.io/blob/master/content/images/dispatcherServlet.png?raw=true)
