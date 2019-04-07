@@ -2,16 +2,19 @@
 
 xwork.xml : 해당 프로젝트의 xwork 설정. 프로젝트 전반적으로 사용되는 interceptor들을 정의할 수 있다.
 
-xwork-(xxxxxx).xml : 각 파트별로 설정 세분화. 필요한 action을 정의하고 해당 action에 적용하고자 하는 interceptor들을 명시한다.
+xwork-(xxxxxx).xml : 각 파트별로 설정 세분화  
+필요한 action을 정의하고 해당 action에 적용하고자 하는 interceptor들을 명시한다.
 
      <interceptor name="interceptorExample" class="com.test.interceptor.InterceptorExample"/> 
 
-interceptor를 정의하는 부분  
+`interceptor를 정의하는 부분`  
+
 위의 경우 InterceptorExample class를 interceptorExample라는 이름으로 정의하는 것이다.  
  
     <interceptor-ref name="interceptorExample"/>
 
-이미 정의된 interceptor를 사용하는 부분  
+`이미 정의된 interceptor를 사용하는 부분`  
+
 reference, 즉 name에 해당하는 interceptor를 참조한다는 것  
 
      <interceptor-stack name="interceptorExampleStack">
@@ -19,7 +22,7 @@ reference, 즉 name에 해당하는 interceptor를 참조한다는 것
             <interceptor-ref name="interceptorTwo"/>
      </interceptor-stack>
 
-interceptor를 여러 개 적용해야할 때 interceptor-stack를 통해 하나의 name으로 정의할 수 있다.  
+interceptor를 여러 개 적용해야할 때 `interceptor-stack`를 통해 하나의 name으로 정의할 수 있다.  
 interceptor-ref로 stack을 참조할 수도 있다.  
 
 * * *
