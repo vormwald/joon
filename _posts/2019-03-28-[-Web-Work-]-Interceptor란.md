@@ -24,7 +24,7 @@ reference, 즉 name에 해당하는 interceptor를 참조한다는 것
 
 interceptor를 여러 개 적용해야할 때 `interceptor-stack`를 통해 하나의 name으로 정의할 수 있다.  
 interceptor-ref로 stack을 참조할 수도 있다.  
-
+    
 * * *
 
 예시 ) xwork-mockexample.xml
