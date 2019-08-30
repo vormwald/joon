@@ -84,7 +84,7 @@ public class SinyutnoriController {
 ModelAndView 객체에 View 이름과 데이터를 직접 담아(addObject) 반환한다.  
 View 이름은 String형에서와 같이 <span style="color:#e11d21">/WEB-INF/views/</span><span style="color:#207de5">userGameInfo</span><span style="color:#009800">.jsp</span> 뷰 템플릿에 매핑된다.  
 
-## 5. POJO  
+## 5. Java Model
 이 경우도 View 이름을 지정해줄 수 없기에 void와 같이 RequestToViewNameTranslator를 이용해 결정한다.  
 ```
 @Controller
@@ -119,7 +119,8 @@ public MemberInfo getMemberInfo(@RequestParam(value = "memberId", defaultValue =
 
 
 
-<br><br>참고
+<br><br><br>
+참고  
 https://kimddochi.tistory.com/86  
 https://ismydream.tistory.com/140  
 http://wonwoo.ml/index.php/post/2007  
