@@ -95,7 +95,7 @@ public class SinyutnoriController {
 
 	@RequestMapping("/userGameInfo")
 	public MemberInfo getUserInfo(@RequestParam(value = "memberId", defaultValue = "") String memberId) {
-            return MemberApiUtil.getMemberInfoModel(memberId);
+        return MemberApiUtil.getMemberInfoModel(memberId);
 	}
 }
 ```
