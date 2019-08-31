@@ -1,6 +1,8 @@
+SpringMVC와 WebWork의 주요 차이점
+
 # WebWork와 SpringMVC 
 
-목차  
+목차      
 1. SpringMVC와 WebWork의 차이점  
 2. SpringMVC  
 3. WebWork  

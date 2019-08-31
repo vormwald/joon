@@ -1,3 +1,5 @@
+WebWork에서 Interceptor란?
+
 # Interceptor
 
 xwork.xml : 해당 프로젝트의 xwork 설정. 프로젝트 전반적으로 사용되는 interceptor들을 정의할 수 있다.

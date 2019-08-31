@@ -1,3 +1,5 @@
+Controller는 View에 의존적이지 않다
+
 # Controller 반환형 정리  
 
 Controller는 View에 의존적이지 않다. Controller는 반환형에 따라 결과를 생성할 View 이름만 지정할 뿐이다.  
