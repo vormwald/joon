@@ -29,7 +29,7 @@ body_class: post-template
 <script>
     window.onload = function () {
         reading_time();
-    }
+    };
 
     function get_text(el) {
         ret = "";
@@ -48,7 +48,7 @@ body_class: post-template
         if (post_content) {
             var words = get_text(post_content),
                 count = words.split(/\s+/).length,
-                read_time = Math.ceil((count / 65)),
+                read_time = Math.ceil((count / 150)),
                 read_time_node = document.createTextNode(read_time + ' min read');
             document.getElementById('js-reading-time').appendChild(read_time_node);
         }
